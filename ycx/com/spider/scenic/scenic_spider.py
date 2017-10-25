@@ -1,66 +1,161 @@
 # coding:utf-8
-import bs4
-from bs4 import BeautifulSoup
-import urllib
-import xlwt
+import requests
+import datetime
 import time
+from com.util.dbutil import DB
+from com.util.constant import HEADER_INFO
+from bs4 import BeautifulSoup
+from selenium import webdriver
 import sys
-default_encoding = 'utf-8'
-if sys.getdefaultencoding() != default_encoding:
-    reload(sys)
-    sys.setdefaultencoding(default_encoding)
+reload(sys)
+sys.setdefaultencoding('utf-8')
+from com.util.timeHelper import timeHelper
 
-def crawl(html_string):
-    #    respons = urllib.urlopen(url)
-    #    soup    = BeautifulSoup(respons.read())
-    soup = BeautifulSoup(html_string)
-    name = ""
-    level = ""
-    address = ""
-    money = ""
-    # 分析网页提取信息，这一部分需要熟悉beautifulsoup
-    for tag in soup.find_all(["span"]):  # 利用beautifulsoup提取所有span标签
-        if "class" in tag.attrs:
-            if "mp-description-name" in tag.attrs["class"]:  # 如果其class包含name,那么就是景区名称，下面同理
-                name = str(tag.string)
-            if "mp-description-level" in tag.attrs["class"]:
-                level = str(tag.string)
-            if "mp-description-address" in tag.attrs["class"]:
-                address = str(tag.string)
-        else:
-            for j in tag.children:  # 提取票价时，在span的子标签span中
-                if type(j) == bs4.element.Tag and j.name == "span":
-                    money = str(j.string)
-    information = (address, name, level, money)
-    return information
+'''
+景点爬虫类
+根据城市表中的城市进行一一爬取
+使用request方法爬取，控制速度
+目标：http://piao.qunar.com/ticket/list.htm?keyword=%E5%B9%BF%E5%B7%9E&region=&from=mpl_search_suggest
+'''
+class Scenic:
+    def __init__(self,driver):
+        self.driver=driver
+        self.db=DB()
+        self.time=timeHelper()
 
 
-# ======python读入excel表初始化
-book = xlwt.Workbook(encoding="utf-8", style_compression=0)
-sheet = book.add_sheet("where_we_go", cell_overwrite_ok=True)
-sheet.write(0, 0, "景区地址")  # 第一行为四个属性名字，整个表为n行×4列，n为抓取到的景区个数
-sheet.write(0, 1, "景区名称")
-sheet.write(0, 2, "景区级别")
-sheet.write(0, 3, "景区票面价")
 
-start_time = time.time()
-line_num = 1
-for i in xrange(0, 1000):  # 2500000000，最大2295597022   #有相当多的景区，这一点吓尿，n大的时候必须用xrange，用range生成一个列表太大崩溃。
-    url = "http://piao.qunar.com/ticket/detail_" + str(i) + ".html"
-    respons = urllib.urlopen(url)
-    if respons.geturl() != url:  # 抓取太快又会发生重定向的问题，重定向后的url网页显示“尊敬的用户，安全系统检测到异常访问，当前请求已经被拦截”
-        print respons.geturl()
-    html_string = respons.read()
-    if "mp-description-detail" in html_string:  # 判断是否有这个网页，像是标号为0的，就没有，1为齐庐山，2为中国竹艺城等等，
-        information = crawl(html_string)  # 进行抓取任务，返回四个主要属性值
-        for j in range(len(information)):
-            sheet.write(line_num, j, information[j])  # 写入excel表中。
-        line_num += 1
-        print "处理url:", i, information[1]
-    if line_num % 10 == 0:
-        end_time = time.time()
-        print "time:", end_time - start_time
-    else:
-        continue
 
-book.save("where.xls")  # 要吧excel进行保存
+    #获取城市,包括时间为空或者时间超过当前时间7天的
+    def get_city(self):
+        city = self.db.select_crawltime()
+        for x in city:
+            #获取时间
+
+            if x[1] is None:
+
+                url = "http://piao.qunar.com/ticket/list.htm?keyword=%s&region=&from=mpl_search_suggest"%x[0]
+
+                # 爬取完毕，写入时间
+                self.db.insert_crawltime(time=self.time.now_time(), city=x[0])
+                # print urlj
+                #调用爬虫方法
+                self.crawl_pages(to_city=x[0],url=url)
+            elif x[1] is not None:
+                days = self.time.time_helper(str(x[1]), self.time.now_time())
+                print '开始检查时间是否大于七天'
+                if days>7:
+                    url = "http://piao.qunar.com/ticket/list.htm?keyword=%s&region=&from=mpl_search_suggest" % x[0]
+
+                    # 爬取完毕，写入时间
+                    self.db.insert_crawltime(time=self.time.now_time(), city=x[0])
+                    # print urlj
+                    # 调用爬虫方法
+                    self.crawl_pages(to_city=x[0], url=url)
+
+
+
+
+    #爬取指定城市的所有景点
+    #包括标题、景区等级、地址、热度、票价、爬取时间、月销售量、来源、简介、图片
+    #控制休眠时间
+    def crawl_pages(self,to_city,url):
+        response = requests.get(url,headers=HEADER_INFO).content
+        #获取到总页数
+        content_tree = BeautifulSoup(response,'html.parser')
+        try:
+            pages = content_tree.find('div',id='pager-container').find_all('a')[-2]
+            all_pages=pages.text.strip()
+            print all_pages
+        except Exception as e:
+            print '只有一页 '
+            all_pages=1
+        self.craw_by_pages(to_city=to_city,pages=int(all_pages),url=url)
+
+
+
+
+
+    #根据页数自动爬取
+    def craw_by_pages(self,to_city,pages,url):
+        #生成url
+        for q in range(1,pages+1):
+            to_url = url+"&page=%s"%q
+            print '开始爬取网址',to_url
+            #使用webdriver进行爬取
+            self.driver.get(to_url)
+            # 将页面滚动条拖到底部
+            js = "var q=document.documentElement.scrollTop=100000"
+            self.driver.execute_script(js)
+            time.sleep(2)
+            # response = requests.get(to_url, headers=HEADER_INFO).content
+            # 获取到正文
+            content_tree = BeautifulSoup(self.driver.page_source, 'html.parser')
+            try:
+                result_list = content_tree.find('div',class_='result_list').find_all('div',class_='sight_item sight_itempos')
+                for item_list in result_list:
+                        # 获取img
+                        try:
+                            img_src = item_list.find('img', class_='img_opacity load')['src']
+                        except Exception as e:
+                            img_src = 'null'
+                            print '找不到图片地址'
+
+                        # 标题
+                        try:
+                            title = item_list.find('h3', class_='sight_item_caption').text
+                        except Exception as e:
+                            title='暂无标题'
+                            print '找不到标题'
+                        # 价格
+                        try:
+                            price=item_list.find('div',class_='sight_item_pop').text.split()[0][1:]
+                            if price.isdigit():
+                                price=float(price)
+                            else:
+                                price=float(0)
+                        except Exception as e:
+                            print '找不到价格信息'
+                            price=float(0)
+                        #url
+                        try:
+                            urls=item_list.find('h3', class_='sight_item_caption').find('a')['href']
+                        except Exception as e:
+                            urls='null'
+                            print '找不到链接'
+                        #热度
+                        try:
+                            hot=item_list.find('span',class_='product_star_level').text.split()[1]
+                        except Exception as e:
+                            hot='0.0'
+                            print '找不到热度'
+                        #等级
+                        try:
+                            level=item_list.find('span',class_='level').text
+                        except Exception as e:
+                            print '找不到等级信息'
+                            level='无等级'
+                        #介绍
+                        try:
+                            intro=item_list.find('div',class_='intro').text
+                        except Exception as e:
+                            print '找不到介绍'
+                            intro='暂无介绍'
+
+
+                        self.db.insert_scenic_mess(
+                            senic_spot_name=title,
+                            introduction=intro,
+                            city=to_city,
+                            price=price,
+                            pic=img_src,
+                            types='1000',
+                            url='http://piao.qunar.com'+urls,
+                            levels=level,
+                            hot=hot
+                        )
+            except Exception as e:
+                print '----错误啦---'
+                print e.message
+
+Scenic(driver=webdriver.Chrome()).get_city()
