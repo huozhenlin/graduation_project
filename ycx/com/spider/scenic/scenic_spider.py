@@ -1,6 +1,5 @@
 # coding:utf-8
 import requests
-import datetime
 import time
 from com.util.dbutil import DB
 from com.util.constant import HEADER_INFO
@@ -37,7 +36,7 @@ class Scenic:
                 url = "http://piao.qunar.com/ticket/list.htm?keyword=%s&region=&from=mpl_search_suggest"%x[0]
 
                 # 爬取完毕，写入时间
-                self.db.insert_crawltime(time=self.time.now_time(), city=x[0])
+                self.db.insert_crawltime(time=self.time.now_time(), city=x[0],colunm_name='scenic_time_crawl')
                 # print urlj
                 #调用爬虫方法
                 self.crawl_pages(to_city=x[0],url=url)
@@ -60,17 +59,21 @@ class Scenic:
     #包括标题、景区等级、地址、热度、票价、爬取时间、月销售量、来源、简介、图片
     #控制休眠时间
     def crawl_pages(self,to_city,url):
-        response = requests.get(url,headers=HEADER_INFO).content
-        #获取到总页数
-        content_tree = BeautifulSoup(response,'html.parser')
-        try:
-            pages = content_tree.find('div',id='pager-container').find_all('a')[-2]
-            all_pages=pages.text.strip()
-            print all_pages
-        except Exception as e:
-            print '只有一页 '
-            all_pages=1
-        self.craw_by_pages(to_city=to_city,pages=int(all_pages),url=url)
+
+        response = requests.get(url,headers=HEADER_INFO)
+        if response.status_code==200:
+            #获取到总页数
+            content_tree = BeautifulSoup(response.content,'html.parser')
+            try:
+                pages = content_tree.find('div',id='pager-container').find_all('a')[-2]
+                all_pages=pages.text.strip()
+                print all_pages
+            except Exception as e:
+                print '只有一页 '
+                all_pages=1
+            self.craw_by_pages(to_city=to_city,pages=int(all_pages),url=url)
+        else:
+            print '错误'
 
 
 
@@ -142,20 +145,22 @@ class Scenic:
                             print '找不到介绍'
                             intro='暂无介绍'
 
-
-                        self.db.insert_scenic_mess(
-                            senic_spot_name=title,
-                            introduction=intro,
-                            city=to_city,
-                            price=price,
-                            pic=img_src,
-                            types='1000',
-                            url='http://piao.qunar.com'+urls,
-                            levels=level,
-                            hot=hot
-                        )
+                        # 酒店查找
+                        num = self.db.if_exist(city_name=to_city, table_name='senic_spot', title=title)
+                        if num == 0:
+                            self.db.insert_scenic_mess(
+                                senic_spot_name=title,
+                                introduction=intro,
+                                city=to_city,
+                                price=price,
+                                pic=img_src,
+                                types='1000',
+                                url='http://piao.qunar.com'+urls,
+                                levels=level,
+                                hot=hot
+                            )
+                        else:
+                            print '存在'
             except Exception as e:
                 print '----错误啦---'
                 print e.message
-
-Scenic(driver=webdriver.Chrome()).get_city()

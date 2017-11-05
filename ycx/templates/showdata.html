@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}数据展示{% endblock %}
+{#这里引入即刻爬虫的js，css文件，控制光标点亮#}
+{% block head %}
+    <link href="{{ url_for('static',filename='css/showdata.css') }}" rel="stylesheet" type="text/css">
+    <script src="{{ url_for('static',filename='js/showdata.js') }}"></script>
+{% endblock %}
+{#即刻爬虫网页的正文#}
+{% block content %}
+    <div class="col-xs-12" style="padding: 15px 0px">
+        <span class="label label-primary" onclick="check(sing)">新获取的演唱会数据：</span>
+    </div>
+    {#    演唱会表数据#}
+    <div id="sing"></div>
+
+    <div class="col-xs-12" style="padding: 15px 0px">
+        <span class="label label-primary" onclick="check(eshow)">新获取的展会数据：</span>
+    </div>
+    {#    展会数据#}
+    <div id="eshow"></div>
+
+    <div class="col-xs-12" style="padding: 15px 0px">
+        <span class="label label-primary" onclick="check(sport)">新获取的体育数据：</span>
+    </div>
+    {#    体育表数据#}
+    <div id="sport"></div>
+
+    <div class="col-xs-12" style="padding: 15px 0px">
+        <span class="label label-primary" onclick="check(news)">新获取的会议新闻数据：</span>
+    </div>
+    {#    会议新闻表数据#}
+    <div id="news"></div>
+
+    <div class="col-xs-12" style="padding: 15px 0px">
+      <span class="label label-primary" onclick="check(weather)">新获取的异常天气数据：</span>
+   </div>
+   {#  异常天气表数据#}
+   <div id="weather"></div>
+
+
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block title %}即时爬虫{% endblock %}
+{#这里引入即刻爬虫的js，css文件，控制光标点亮#}
+{% block head %}
+    <link href="{{ url_for('static',filename='css/now_splider.css') }}" rel="stylesheet" type="text/css">
+    <script src="{{ url_for('static',filename='js/now_splider.js') }}"></script>
+{% endblock %}
+{#即刻爬虫网页的正文#}
+{% block content %}
+
+    <!--  定义模态框触发器，此处为按钮触发  -->
+    <div id="add" style="margin-top: 10px">
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添加任务
+        </button>
+    </div>
+
+
+    <form method="post" class="form-horizontal" role="form" id="myForm"
+          onsubmit="return ">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <!--  定义模态框，过渡效果为淡入，id为myModal,tabindex=-1可以禁用使用tab切换，aria-labelledby用于引用模态框的标题，aria-hidden=true保持模态框在触发前窗口不可见  -->
+            <div class="modal-dialog">
+                <!--  显示模态框对话框模型（若不写下一个div则没有颜色）  -->
+                <div class="modal-content">
+                    <!--  显示模态框白色背景，所有内容都写在这个div里面  -->
+
+                    <div class="btn-info modal-header">
+                        <!--  模态框标题  -->
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <!--  关闭按钮  -->
+                        <h4>即时爬虫配置</h4>
+                        <!--  标题内容  -->
+                    </div>
+
+                    <div class="modal-body">
+                        <!--  模态框内容，我在此处添加一个表单 -->
+                        <form class="form-horizontal" role="form">
+                            <div class="input-group">
+                                <div class="input-group-addon">任务名称</div>
+                                <input id="task_name" class="form-control" type="text" placeholder="请输入任务名" name="task_name">
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-addon">爬虫类型</div>
+                                <!--保存多选框的id-->
+                                <input type="hidden" id="ids" name="select_type"/>
+                                <input type="hidden" id="splider_type" name="splider_type" value="0"/>
+                                <input class="form-control" type="text" id="txt" onclick="show(this)"
+                                       placeholder="点击选择类型" readonly>
+                                <div class="popover fade bottom in" id="panel" style="display:none">
+                                    <div class="arrow"></div>
+                                    <div class="popover-title" style="height:35px;">
+                                        <div class="checkbox" style="margin-top:0;margin-bottom:-25px;"></div>
+                                        <label><label> 请选择</label></label>
+                                        <button type="button" class="close" onclick="hide()">
+                                            <span aria-hidden="true">&times;</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                    </div>
+                                    <div class="popover-content">
+                                        <ul class="list-inline" id="ul">
+                                            <!--<li><div class="checkbox"></div><label><input type="checkbox" value="0" onclick="Choose(this)"/>5M</label></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!--  模态框底部样式，一般是提交或者确定按钮 -->
+                        <button type="button" class="btn btn-info" onclick="addTask()" data-dismiss="modal">确定</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    </div>
+
+                </div><!-- /.modal-content -->
+            </div>
+        </div> <!-- /.modal -->
+    </form>
+
+    <hr>
+    <div class="col-xs-12" style="padding: 15px 0px">
+        <span class="label label-primary" onclick="showTask(0)">就绪/正在进行的即时爬虫：</span>
+    </div>
+    {#    正在进行的爬虫#}
+    <div id="spliding"></div>
+
+
+    {#    历史爬虫#}
+    <div class="col-xs-12" style="padding: 5px 0px">
+        <span class="label label-primary">历史爬虫：</span>
+    </div>
+    <div id="history_spliding"></div>
+{% endblock %}

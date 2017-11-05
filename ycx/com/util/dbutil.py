@@ -48,7 +48,7 @@ class DB:
 
     # 查询城市名，时间
     def select_crawltime(self):
-        sql = "select cityname,time_crawl from city"
+        sql = "select cityname,scenic_time_crawl,hotel_time_crawl,food_time_crawl from city"
         print sql
         self.cursor.execute(sql)
         data =  self.cursor.fetchall()
@@ -66,12 +66,30 @@ class DB:
         # sql02="update city set location='%s' WHERE cityname='%s'"
 
     # 写入查询时间
-    def insert_crawltime(self,time,city):
+    def insert_crawltime(self,time,city,colunm_name):
         try:
-            sql02="update city set time_crawl='%s'where cityname='%s'"%(time,city)
+            sql02="update city set %s='%s'where cityname='%s'"%(colunm_name,time,city)
             print sql02
             self.cursor.execute(sql02)
             self.conn.commit()
+        except Exception as e:
+            print e.message
+            self.conn.rollback()
+
+    # 根据城市查询酒店或者美食或者景点是否存在
+    def if_exist(self,city_name,table_name,title):
+        try:
+            if table_name =='scenic_spot':
+                sql03 = "select count(*) from %s where senic_spot_name='%s' and city ='%s'"%(table_name,title,city_name)
+            elif table_name =='hotel':
+                sql03 = "select count(*) from %s where hotel_name='%s' and city ='%s'"%(table_name,title,city_name)
+            else:
+                sql03 = "select count(*) from %s where food_name='%s' and city ='%s'"%(table_name,title,city_name)
+
+            print sql03
+            self.cursor.execute(sql03)
+            data = self.cursor.fetchall()
+            return data[0][0]
         except Exception as e:
             print e.message
             self.conn.rollback()
@@ -113,15 +131,39 @@ class DB:
             print e.message
             self.conn.rollback()
 
+    # 将美食信息存入数据库
+    def insert_food_mess(self,city,food_pic,food_name,food_link):
+            try:
+                sql = "insert into food(food_name,food_link,city,food_pic)VALUES " \
+                      "('%s','%s','%s','%s')" % (
+                      food_name,food_link,city,food_pic)
+                print sql
+                self.cursor.execute(sql)
+                self.conn.commit()
+            except Exception as e:
+                print '插入错误'
+                print e.message
+                self.conn.rollback()
 
-# DB().insert_scenic_mess(
-#     senic_spot_name='桃山公园',
-#     introduction='远远望去，郁郁葱葱，繁花似锦，莺歌燕舞',
-#     price=0,
-#     city='七台河市',
-#     url='http://piao.qunar.com/ticket/detail_1487394487.html?st=a3clM0QlRTQlQjglODMlRTUlOEYlQjAlRTYlQjIlQjMlRTUlQjglODIlMjZpZCUzRDE5MDY4NyUyNnR5cGUlM0QwJTI2aWR4JTNEMSUyNnF0JTNEcmVnaW9uJTI2YXBrJTNEMiUyNnNjJTNEV1dXJTI2YWJ0cmFjZSUzRGJ3ZCU0MCVFNSVBNCU5NiVFNSU5QyVCMCUyNmxyJTNEJUU2JUI3JUIxJUU1JTlDJUIzJTI2ZnQlM0QlN0IlN0Q%3D#from=mpl_search_suggest',
-#     pic='http://img1.qunarzz.com/sight/p0/201403/11/8d20a44b58e581574c8d5c52dafe054d.jpg_280x200_16b2f8f7.jpg',
-#     types='1000',
-#     hot='0.0',
-#     levels='无等级'
-# )
+
+    # 将旅店信息插入数据库
+    def insert_hotel_mess(self,hotel_name,hotel_address,hotel_price,hotel_pic,hotel_link,city,source):
+        try:
+
+
+            print '酒店名是', hotel_name
+            print '酒店价格是', hotel_price
+            print '酒店地址是', hotel_address
+            print '酒店图片是', hotel_pic
+            print '酒店链接是', hotel_link
+            print '城市是',city
+
+            sql="insert into hotel(hotel_name,city,pic,price,types,url,address,source)VALUES " \
+                "('%s','%s','%s',%f,'%s','%s','%s','%s')"%(hotel_name,city,hotel_pic,hotel_price,'1002',hotel_link,hotel_address,source)
+            print sql
+            self.cursor.execute(sql)
+            self.conn.commit()
+        except Exception as e:
+            print '插入错误'
+            print e.message
+            self.conn.rollback()
