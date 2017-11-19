@@ -2,158 +2,175 @@
 import sys
 from flask import Flask, render_template, request, session, redirect, url_for, jsonify, abort
 
+from com.model.Task import Task
+from com.model.User import User
 default_encoding = 'utf-8'
 if sys.getdefaultencoding() != default_encoding:
     reload(sys)
     sys.setdefaultencoding(default_encoding)
-from flask_sqlalchemy import SQLAlchemy
 from com.util.constant import URL
 from com.util.timeHelper import timeHelper
 from apscheduler.schedulers.blocking import BlockingScheduler
 from com.util import constant
-
+from com.factory.app_factory import db
+from decorators import login_required
 # 全局共享变量
 app = Flask(__name__)
 app.config.from_object(constant)
-db = SQLAlchemy(app)
+db.init_app(app)
+#
+#
+# class City(db.Model):
+#     __tablename__ = 'city'
+#     cityname = db.Column(db.String(50), primary_key=True)
+#     introduction = db.Column(db.Text, nullable=True)
+#     scenic_time_crawl = db.Column(db.Date, nullable=True)
+#     lat = db.Column(db.String(50), nullable=True)
+#     lng = db.Column(db.String(50), nullable=True)
+#     hotel_time_crawl = db.Column(db.Date, nullable=True)
+#     food_time_crawl = db.Column(db.Date, nullable=True)
+#
+#     def to_json(self):
+#         return {
+#             'cityname': self.cityname,
+#             'introduction': self.introduction,
+#             'scenic_time_crawl': self.scenic_time_crawl,
+#             'lat': self.lat,
+#             'lng': self.lng,
+#             'hotel_time_crawl': self.hotel_time_crawl,
+#             'food_time_crawl': self.food_time_crawl
+#
+#         }
+#
+#
+# class Food(db.Model):
+#     __tablename__ = 'food'
+#     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+#     food_name = db.Column(db.String(50))
+#     food_link = db.Column(db.Text, nullable=True)
+#     food_pic = db.Column(db.Text, nullable=True)
+#     city = db.Column(db.String(50), db.ForeignKey('city.cityname'))
+#
+#     def to_json(self):
+#         return {
+#             'food_name': self.food_name,
+#             'food_link': self.food_link,
+#             'food_pic': self.food_pic,
+#             'city': self.city
+#         }
+#
+#
+# class Hotel(db.Model):
+#     __tablename__ = 'hotel'
+#     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+#     hotel_name = db.Column(db.String(25))
+#     city = db.Column(db.String(255), db.ForeignKey('city.cityname'), nullable=True)
+#     pic = db.Column(db.Text, nullable=True)
+#     price = db.Column(db.Integer, nullable=True)
+#     types = db.Column(db.String(4), nullable=True)
+#     url = db.Column(db.Text, nullable=True)
+#     address = db.Column(db.String(100), nullable=True)
+#     source = db.Column(db.String(20), nullable=True)
+#
+#     def to_json(self):
+#         return {
+#             'hotel_name': self.hotel_name,
+#             'city': self.city,
+#             'pic': self.pic,
+#             'price': self.price,
+#             'types': self.types,
+#             'url': self.url,
+#             'address': self.address,
+#             'source': self.source
+#
+#         }
+#
+#
+# class Senic_spot(db.Model):
+#     _tablename__ = 'senic_spot_name'
+#     id = db.Column(db.Integer, nullable=False, primary_key=True)
+#     senic_spot_name = db.Column(db.String(50), nullable=True)
+#     introduction = db.Column(db.String(255), db.ForeignKey('city.cityname'), nullable=True)
+#     pic = db.Column(db.Text, nullable=True)
+#     price = db.Column(db.Integer, nullable=True)
+#     types = db.Column(db.String(4), nullable=True)
+#     url = db.Column(db.Text, nullable=True)
+#     levels = db.Column(db.String(20), nullable=True)
+#     source = db.Column(db.String(20), nullable=True)
+#     city = db.Column(db.String(25), db.ForeignKey('city.cityname'), nullable=True)
+#
+#     def to_json(self):
+#         return {
+#             'senic_spot_name': self.senic_spot_name,
+#             'introduction': self.introduction,
+#             'pic': self.pic,
+#             'price': self.price,
+#             'types': self.types,
+#             'url': self.url,
+#             'levels': self.levels,
+#             'source': self.source,
+#             'city': self.city
+#
+#         }
+#
+#         # 任务模型
+#
+#
+# class Task(db.Model):
+#     __tablename__ = 'task'
+#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     # 名字
+#     name = db.Column(db.String(50), nullable=False)
+#     # 创建时间
+#     time = db.Column(db.DateTime, nullable=False)
+#     # 定时时间
+#     run_time = db.Column(db.DateTime, nullable=True)
+#     # 爬虫任务
+#     spider_type = db.Column(db.String(10), nullable=False)
+#     # 状态,0为未执行
+#     status = db.Column(db.Integer, nullable=True, default=0)
+#     # 爬虫类型,0是即时爬虫，1是定时爬虫，暂定
+#     type = db.Column(db.Integer, nullable=True, default=0)
+#
+#     def to_json(self):
+#         return {
+#             'id': self.id,
+#             'name': self.name,
+#             'time': str(self.time),
+#             'run_time': self.run_time,
+#             'spider_task': self.spider_type,
+#             'status': self.status,
+#             'type': self.type
+#         }
+#
+#
+# class User(db.Model):
+#     __tablename__ = 'user'
+#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     account = db.Column(db.String(13), nullable=False)
+#     password = db.Column(db.String(50), nullable=False)
+#
+#
+# db.create_all()
 
 
-class City(db.Model):
-    __tablename__ = 'city'
-    cityname = db.Column(db.String(50), primary_key=True)
-    introduction = db.Column(db.Text, nullable=True)
-    scenic_time_crawl = db.Column(db.Date, nullable=True)
-    lat = db.Column(db.String(50), nullable=True)
-    lng = db.Column(db.String(50), nullable=True)
-    hotel_time_crawl = db.Column(db.Date, nullable=True)
-    food_time_crawl = db.Column(db.Date, nullable=True)
-
-    def to_json(self):
-        return {
-            'cityname': self.cityname,
-            'introduction': self.introduction,
-            'scenic_time_crawl': self.scenic_time_crawl,
-            'lat': self.lat,
-            'lng': self.lng,
-            'hotel_time_crawl': self.hotel_time_crawl,
-            'food_time_crawl': self.food_time_crawl
-
-        }
+# 登录验证
+# @app.before_request
+# def check_login():
+#     ip = request.remote_addr
+#     url = request.url
+#     print ip,
+#     print url
+#
+#
+#
+#
+#
+#     # 跳转不同的页面逻辑判断
 
 
-class Food(db.Model):
-    __tablename__ = 'food'
-    id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    food_name = db.Column(db.String(50))
-    food_link = db.Column(db.Text, nullable=True)
-    food_pic = db.Column(db.Text, nullable=True)
-    city = db.Column(db.String(50), db.ForeignKey('city.cityname'))
-
-    def to_json(self):
-        return {
-            'food_name': self.food_name,
-            'food_link': self.food_link,
-            'food_pic': self.food_pic,
-            'city': self.city
-        }
-
-
-class Hotel(db.Model):
-    __tablename__ = 'hotel'
-    id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    hotel_name = db.Column(db.String(25))
-    city = db.Column(db.String(255), db.ForeignKey('city.cityname'), nullable=True)
-    pic = db.Column(db.Text, nullable=True)
-    price = db.Column(db.Integer, nullable=True)
-    types = db.Column(db.String(4), nullable=True)
-    url = db.Column(db.Text, nullable=True)
-    address = db.Column(db.String(100), nullable=True)
-    source = db.Column(db.String(20), nullable=True)
-
-    def to_json(self):
-        return {
-            'hotel_name': self.hotel_name,
-            'city': self.city,
-            'pic': self.pic,
-            'price': self.price,
-            'types': self.types,
-            'url': self.url,
-            'address': self.address,
-            'source': self.source
-
-        }
-
-
-class Senic_spot(db.Model):
-    _tablename__ = 'senic_spot_name'
-    id = db.Column(db.Integer, nullable=False, primary_key=True)
-    senic_spot_name = db.Column(db.String(50), nullable=True)
-    introduction = db.Column(db.String(255), db.ForeignKey('city.cityname'), nullable=True)
-    pic = db.Column(db.Text, nullable=True)
-    price = db.Column(db.Integer, nullable=True)
-    types = db.Column(db.String(4), nullable=True)
-    url = db.Column(db.Text, nullable=True)
-    levels = db.Column(db.String(20), nullable=True)
-    source = db.Column(db.String(20), nullable=True)
-    city = db.Column(db.String(25), db.ForeignKey('city.cityname'), nullable=True)
-
-    def to_json(self):
-        return {
-            'senic_spot_name': self.senic_spot_name,
-            'introduction': self.introduction,
-            'pic': self.pic,
-            'price': self.price,
-            'types': self.types,
-            'url': self.url,
-            'levels': self.levels,
-            'source': self.source,
-            'city': self.city
-
-        }
-
-        # 任务模型
-
-
-class Task(db.Model):
-    __tablename__ = 'task'
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    # 名字
-    name = db.Column(db.String(50), nullable=False)
-    # 创建时间
-    time = db.Column(db.DateTime, nullable=False)
-    # 定时时间
-    run_time = db.Column(db.DateTime, nullable=True)
-    # 爬虫任务
-    spider_type = db.Column(db.String(10), nullable=False)
-    # 状态,0为未执行
-    status = db.Column(db.Integer, nullable=True, default=0)
-    # 爬虫类型,0是即时爬虫，1是定时爬虫，暂定
-    type = db.Column(db.Integer, nullable=True, default=0)
-
-    def to_json(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'time': str(self.time),
-            'run_time': self.run_time,
-            'spider_task': self.spider_type,
-            'status': self.status,
-            'type': self.type
-        }
-
-
-class User(db.Model):
-    __tablename__ = 'user'
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    account = db.Column(db.String(13), nullable=False)
-    password = db.Column(db.String(50), nullable=False)
-
-
-db.create_all()
-
-
-# 跳转不同的页面逻辑判断
 @app.route('/index/page')
+@login_required
 def to_page():
     page = request.args.get('p')
     print page
@@ -241,6 +258,7 @@ def addjob():
 # 显示任务,可以返回未执行的定时爬虫，一次爬虫
 # 和执行完毕的定时爬虫和一次爬虫
 @app.route(URL + 'showjob', methods=['get'])
+@login_required
 def showjob():
     args = request.args.get('status')
     type = request.args.get('type')
@@ -264,6 +282,7 @@ def showjob():
 
 # 获取任务列表
 @app.route(URL + 'queue', methods=['GET'])
+@login_required
 def showQueue():
     # 简单返回任务的个数
     splider_list = []
@@ -276,6 +295,7 @@ def showQueue():
 
 # 移除任务
 @app.route(URL + 'pushjob', methods=['GET'])
+@login_required
 def pushjob():
     id = request.args.get('id')
     scheduler.remove_job(id)
@@ -283,6 +303,7 @@ def pushjob():
 
 # 删除任务
 @app.route(URL + 'deljob', methods=['GET'])
+@login_required
 def deljob():
     id = request.args.get('id')
     print id
@@ -302,8 +323,10 @@ def deljob():
         message = {"delmes": "fail"}
         return jsonify(message)  # 修改任务
 
+
 # 根据id获取爬虫配置信息
 @app.route('/ycx/querybyid', methods=['GET'])
+@login_required
 def scan2():
     args = int(request.args.get('id'))
     result = Task.query.filter_by(id=args).first()
@@ -312,7 +335,10 @@ def scan2():
     else:
         dict = {"message": "none"}
         return jsonify(dict)  # 执行任务
+
+
 @app.route(URL + 'startings', methods=['GET'])
+@login_required
 def startjobs():
     from task import Spider_task
     id = request.args.get('id')
@@ -343,6 +369,7 @@ def startjobs():
 
 # 暂停任务弄
 @app.route(URL + 'pause', methods=['GET'])
+@login_required
 def pausejobs():
     id = request.args.get('id')
     scheduler.pause_job(id)
@@ -351,6 +378,7 @@ def pausejobs():
 
 # 停止任务
 @app.route(URL + 'stop', methods=['GET'])
+@login_required
 def stopjobs():
     id = request.args.get('id')
     scheduler.resume_job(id)
@@ -359,6 +387,7 @@ def stopjobs():
 
 # 登录
 @app.route(URL + 'login')
+@login_required
 def login():
     return render_template('login.html')
 
