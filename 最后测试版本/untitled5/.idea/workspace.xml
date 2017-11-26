@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="540fe92a-d49f-4108-a7ec-7d1046c12828" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/untitled2$class_to_csv.coverage" NAME="class_to_csv Coverage Results" MODIFIED="1503581194764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$test_Thread.coverage" NAME="test_Thread Coverage Results" MODIFIED="1503329688006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_in_test_Thread_py.coverage" NAME="Unittests in Thread1.py Coverage Results" MODIFIED="1503329835043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_in_Thread2_py.coverage" NAME="Unittests in Thread2.py Coverage Results" MODIFIED="1503369183752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_test_Thread_TestThread_run.coverage" NAME="Unittests for Softbei.Thread1.TestThread.run Coverage Results" MODIFIED="1503329897670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$class_damai_sing_onethread.coverage" NAME="class_damai_sing_onethread Coverage Results" MODIFIED="1502595375220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/grab_data/sing" />
+    <SUITE FILE_PATH="coverage/untitled2$class_idaocao_sing.coverage" NAME="class_idaocao_sing Coverage Results" MODIFIED="1503303408978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/sing" />
+    <SUITE FILE_PATH="coverage/untitled2$class_tf_idf.coverage" NAME="class_tf_idf Coverage Results" MODIFIED="1502693311293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/age" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_in_Test1_py.coverage" NAME="Unittests in Test1.py Coverage Results" MODIFIED="1503306228872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled5$ycx.coverage" NAME="ycx Coverage Results" MODIFIED="1509867377042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$test.coverage" NAME="test Coverage Results" MODIFIED="1503907293201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$Thread2.coverage" NAME="Thread2 Coverage Results" MODIFIED="1503567383137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$funct.coverage" NAME="funct Coverage Results" MODIFIED="1503375584763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_main_analyse_data.coverage" NAME="class_main_analyse_data Coverage Results" MODIFIED="1503501924893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$class_getzhuban.coverage" NAME="class_getzhuban Coverage Results" MODIFIED="1503582979490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_in_Thread1_py.coverage" NAME="Unittests in Thread1.py Coverage Results" MODIFIED="1503391786156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$class_age.coverage" NAME="class_age Coverage Results" MODIFIED="1504615073700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled3$handle_removal.coverage" NAME="handle_removal Coverage Results" MODIFIED="1499609279675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei/csv_removal" />
+    <SUITE FILE_PATH="coverage/untitled2$class_damai_sing__1_.coverage" NAME="class_damai_sing (1) Coverage Results" MODIFIED="1503303352649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data" />
+    <SUITE FILE_PATH="coverage/untitled2$main_analyse_data.coverage" NAME="main_analyse_data Coverage Results" MODIFIED="1502674235557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$class_history.coverage" NAME="class_history Coverage Results" MODIFIED="1503582646908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$class_year_times.coverage" NAME="class_year_times Coverage Results" MODIFIED="1503582885670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_Softbei_test_Test_a_Test_a_test_drop_repet.coverage" NAME="Unittests for Softbei.test.Test_a.Test_a.test_drop_repet Coverage Results" MODIFIED="1503306776090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1504619084352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$Thread1.coverage" NAME="Thread1 Coverage Results" MODIFIED="1503408760484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$class_other_csv.coverage" NAME="class_other_csv Coverage Results" MODIFIED="1503583539954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$to_csv.coverage" NAME="to_csv Coverage Results" MODIFIED="1502609970821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_Softbei_test_Test_a_Test_a.coverage" NAME="Unittests for Softbei.test.Test_a.Test_a Coverage Results" MODIFIED="1503306757013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1503971659287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$main_grab_data__1_.coverage" NAME="main_grab_data (1) Coverage Results" MODIFIED="1502504940789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$handle_hot.coverage" NAME="handle_hot Coverage Results" MODIFIED="1499611184764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei/analyse_data/hot" />
+    <SUITE FILE_PATH="coverage/untitled5$mailHelper.coverage" NAME="mailHelper Coverage Results" MODIFIED="1511267883590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/util" />
+    <SUITE FILE_PATH="coverage/untitled2$handle_time.coverage" NAME="handle_time Coverage Results" MODIFIED="1502602753876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_removal.coverage" NAME="class_removal Coverage Results" MODIFIED="1503581418224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/removal_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_merge_csv.coverage" NAME="class_merge_csv Coverage Results" MODIFIED="1502866792357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1503496194033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_handle_time.coverage" NAME="class_handle_time Coverage Results" MODIFIED="1503201063319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_eshow_show.coverage" NAME="class_eshow_show Coverage Results" MODIFIED="1503304915564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/show" />
+    <SUITE FILE_PATH="coverage/untitled2$class_database.coverage" NAME="class_database Coverage Results" MODIFIED="1504619834424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/common" />
+    <SUITE FILE_PATH="coverage/untitled2$class_main_grab_data.coverage" NAME="class_main_grab_data Coverage Results" MODIFIED="1503500386569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$class_main_analyse_data__1_.coverage" NAME="class_main_analyse_data (1) Coverage Results" MODIFIED="1502896628970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_Softbei_test_Test1_Test1.coverage" NAME="Unittests for Softbei.test.Test1.Test1 Coverage Results" MODIFIED="1503305999843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$Class_getage.coverage" NAME="Class_getage Coverage Results" MODIFIED="1502628497252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/age" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_Softbei_test_Test1_Test1_test_history.coverage" NAME="Unittests for Softbei.test.Test1.Test1.test_history Coverage Results" MODIFIED="1503306368374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$class_tufa_weather.coverage" NAME="class_tufa_weather Coverage Results" MODIFIED="1502532634834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/grab_data/weather" />
+    <SUITE FILE_PATH="coverage/untitled2$class_getage.coverage" NAME="class_getage Coverage Results" MODIFIED="1502693135836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/age" />
+    <SUITE FILE_PATH="coverage/untitled2$Thread0.coverage" NAME="Thread0 Coverage Results" MODIFIED="1503408452064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$Test_a.coverage" NAME="Test_a Coverage Results" MODIFIED="1503306550001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/test" />
+    <SUITE FILE_PATH="coverage/untitled2$analyse_data_task.coverage" NAME="analyse_data_task Coverage Results" MODIFIED="1504680610458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_test_Thread_TestThread.coverage" NAME="Unittests for test_Thread.TestThread Coverage Results" MODIFIED="1503329674194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$city.coverage" NAME="city Coverage Results" MODIFIED="1504672416994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$class_weather_warning.coverage" NAME="class_weather_warning Coverage Results" MODIFIED="1503583273112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$class_xinhua_news.coverage" NAME="class_xinhua_news Coverage Results" MODIFIED="1503560182048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/news" />
+    <SUITE FILE_PATH="coverage/untitled2$class_age__2_.coverage" NAME="class_age (2) Coverage Results" MODIFIED="1503061494497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1509861015180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$class_getcity.coverage" NAME="class_getcity Coverage Results" MODIFIED="1503583439534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled5$untitled2.coverage" NAME="untitled2 Coverage Results" MODIFIED="1511708456795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$class_hot.coverage" NAME="class_hot Coverage Results" MODIFIED="1504525287270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$class_itplearning.coverage" NAME="class_itplearning Coverage Results" MODIFIED="1502619656026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/Itp_weather_warning" />
+    <SUITE FILE_PATH="coverage/untitled2$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1502850921698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_damai_sport.coverage" NAME="class_damai_sport Coverage Results" MODIFIED="1503559568450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/sport" />
+    <SUITE FILE_PATH="coverage/untitled2$class_age_tf_idf__1_.coverage" NAME="class_age_tf_idf (1) Coverage Results" MODIFIED="1503061480870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled3$handle_other_csv.coverage" NAME="handle_other_csv Coverage Results" MODIFIED="1499609121941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei/analyse_data/common" />
+    <SUITE FILE_PATH="coverage/untitled2$class_age__1_.coverage" NAME="class_age (1) Coverage Results" MODIFIED="1502893036392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$Thread4.coverage" NAME="Thread4 Coverage Results" MODIFIED="1503414270299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$class_damai_sing.coverage" NAME="class_damai_sing Coverage Results" MODIFIED="1503368666897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/sing" />
+    <SUITE FILE_PATH="coverage/untitled2$Unittests_for_Softbei_test_Test1_Test1_tearDown.coverage" NAME="Unittests for Softbei.test.Test1.Test1.tearDown Coverage Results" MODIFIED="1503305967169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled2$class_hot_num.coverage" NAME="class_hot_num Coverage Results" MODIFIED="1502629518361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/hot" />
+    <SUITE FILE_PATH="coverage/untitled2$handle_removal.coverage" NAME="handle_removal Coverage Results" MODIFIED="1499609780506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei/csv_removal" />
+    <SUITE FILE_PATH="coverage/untitled2$test_thread.coverage" NAME="test_thread Coverage Results" MODIFIED="1503299433230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/test" />
+    <SUITE FILE_PATH="coverage/untitled3$main_analyse_data.coverage" NAME="main_analyse_data Coverage Results" MODIFIED="1499608553376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$handle_other_csv.coverage" NAME="handle_other_csv Coverage Results" MODIFIED="1502637073256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/common" />
+    <SUITE FILE_PATH="coverage/untitled2$class_age_tf_idf.coverage" NAME="class_age_tf_idf Coverage Results" MODIFIED="1503306357555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/analyse_data" />
+    <SUITE FILE_PATH="coverage/untitled2$merge_csv.coverage" NAME="merge_csv Coverage Results" MODIFIED="1499611477370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei/analyse_data/common" />
+    <SUITE FILE_PATH="coverage/untitled2$Thread3.coverage" NAME="Thread3 Coverage Results" MODIFIED="1503563487375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled2$class_damai_sing_thread.coverage" NAME="class_damai_sing_thread Coverage Results" MODIFIED="1503212504034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/sing" />
+    <SUITE FILE_PATH="coverage/untitled2$class_xinlang_news.coverage" NAME="class_xinlang_news Coverage Results" MODIFIED="1503558137061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Softbei/grab_data/news" />
+    <SUITE FILE_PATH="coverage/untitled3$to_csv.coverage" NAME="to_csv Coverage Results" MODIFIED="1499608975526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/softbei/to_csv" />
+    <SUITE FILE_PATH="coverage/untitled2$main_grab_data.coverage" NAME="main_grab_data Coverage Results" MODIFIED="1502591212418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei" />
+    <SUITE FILE_PATH="coverage/untitled5$test.coverage" NAME="test Coverage Results" MODIFIED="1511265547619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled2$handle_age.coverage" NAME="handle_age Coverage Results" MODIFIED="1502626229287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getData/Softbei/analyse_data/age" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="untitled2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/untitled2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="441" column="35" lean-forward="true" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+              <folding>
+                <element signature="e#14#24#0" expanded="true" />
+                <element signature="e#373#429#0" expanded="false" />
+                <element signature="e#757#758#0" expanded="false" />
+                <element signature="e#5559#6115#0" expanded="false" />
+                <element signature="e#6896#6952#0" expanded="false" />
+                <element signature="e#7010#7185#0" expanded="false" />
+                <element signature="e#7260#8056#0" expanded="false" />
+                <element signature="e#8727#8919#0" expanded="false" />
+                <element signature="e#9009#9065#0" expanded="false" />
+                <element signature="e#9153#9645#0" expanded="false" />
+                <element signature="e#9739#9962#0" expanded="false" />
+                <element signature="e#10049#10789#0" expanded="false" />
+                <element signature="e#10877#10973#0" expanded="false" />
+                <element signature="e#11000#11212#0" expanded="false" />
+                <element signature="e#11043#11098#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showdata.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/showdata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="33" />
+              <folding>
+                <marker date="1511709449105" expanded="true" signature="1391:1409" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="City.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com/model/City.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showdata.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/showdata.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Senic_spot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com/model/Senic_spot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Food.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com/model/Food.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hotel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com/model/Hotel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>close</find>
+      <find>Chrome</find>
+      <find>child</find>
+      <find>chrome</find>
+      <find>read</find>
+      <find>self,</find>
+      <find>tag</find>
+      <find>files</find>
+      <find>get</find>
+      <find>getlist</find>
+      <find>type</find>
+      <find>*</find>
+      <find>len</find>
+      <find>url_zbf</find>
+      <find>myThread</find>
+      <find>exitFlag</find>
+      <find>app</find>
+      <find>run</find>
+      <find>driver</find>
+      <find>drivers</find>
+      <find>print</find>
+      <find>'sing'</find>
+      <find>to_nes</find>
+      <find>words</find>
+      <find>news</find>
+      <find>66</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>a</replace>
+      <replace>DamaiSing</replace>
+      <replace>t</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\untitled2</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Softbei/common/class_database(2).py" />
+        <option value="$PROJECT_DIR$/Softbei/grab_data/weather/class_tufa_weather.py" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/class_merge_csv.py" />
+        <option value="$PROJECT_DIR$/templates/frequency_splider.html" />
+        <option value="$PROJECT_DIR$/static/js/frequency_splider.js" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/class_weather_warning.py" />
+        <option value="$PROJECT_DIR$/Softbei/grab_data/news/class_ltplearning.py" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/class_other_csv.py" />
+        <option value="$PROJECT_DIR$/static/js/analy_data.js" />
+        <option value="$PROJECT_DIR$/Softbei/grab_data/sing/class_idaocao_sing.py" />
+        <option value="$PROJECT_DIR$/Softbei/class_main_analyse_data.py" />
+        <option value="$PROJECT_DIR$/Softbei/removal_csv/csv/eshow.csv" />
+        <option value="$PROJECT_DIR$/Softbei/grab_data/news/class_news.py" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/class_age.py" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/common/merge_sing_csv.csv" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/class_age_tf_idf.py" />
+        <option value="$PROJECT_DIR$/Softbei/to_csv/__init__.py" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/common/merge_eshow_csv.csv" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/common/merge_news_csv.csv" />
+        <option value="$PROJECT_DIR$/Softbei/common/class_database.py" />
+        <option value="$PROJECT_DIR$/Softbei/analyse_data/city.py" />
+        <option value="$PROJECT_DIR$/analyse_data_task.py" />
+        <option value="$PROJECT_DIR$/Softbei/grab_data/news/class_xinlang_news.py" />
+        <option value="$PROJECT_DIR$/Softbei/class_main_grab_data.py" />
+        <option value="$PROJECT_DIR$/ycx.py" />
+        <option value="$PROJECT_DIR$/templates/now_spilder.html" />
+        <option value="$PROJECT_DIR$/task.py" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/js/time_spilder.js" />
+        <option value="$PROJECT_DIR$/com/factory/app_factory.py" />
+        <option value="$PROJECT_DIR$/com/model/Task.py" />
+        <option value="$PROJECT_DIR$/decorators.py" />
+        <option value="$PROJECT_DIR$/com/model/User.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/com/util/constant.py" />
+        <option value="$PROJECT_DIR$/com/util/mailHelper.py" />
+        <option value="$PROJECT_DIR$/com/spider/city/city_spider.py" />
+        <option value="$PROJECT_DIR$/com/spider/food/food_spider.py" />
+        <option value="$PROJECT_DIR$/com/spider/hotel/hotel_spider.py" />
+        <option value="$PROJECT_DIR$/com/spider/scenic/scenic_spider.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/js/now_splider.js" />
+        <option value="$PROJECT_DIR$/static/js/index_index.js" />
+        <option value="$PROJECT_DIR$/untitled2.py" />
+        <option value="$PROJECT_DIR$/com/model/City.py" />
+        <option value="$PROJECT_DIR$/com/model/Food.py" />
+        <option value="$PROJECT_DIR$/com/model/Hotel.py" />
+        <option value="$PROJECT_DIR$/com/model/Senic_spot.py" />
+        <option value="$PROJECT_DIR$/static/js/showdata.js" />
+        <option value="$PROJECT_DIR$/templates/showdata.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="34" />
+    <option name="y" value="1" />
+    <option name="width" value="1932" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/untitled2" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\untitled2\static\img" />
+      <recent name="C:\untitled2\static" />
+      <recent name="C:\untitled2\Softbei\analyse_data" />
+      <recent name="C:\untitled2\Softbei\analyse_data\common" />
+      <recent name="C:\untitled2\Softbei" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hzl\PycharmProjects\untitled5\com\spider\city" />
+      <recent name="C:\Users\hzl\PycharmProjects\untitled5\com\spider\food" />
+      <recent name="C:\Users\hzl\PycharmProjects\untitled5\com\spider\hotel" />
+      <recent name="C:\Users\hzl\PycharmProjects\untitled5\com\spider\scenic" />
+      <recent name="C:\Users\hzl\PycharmProjects\untitled5" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.untitled2">
+    <configuration default="false" name="untitled2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/untitled2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="analyse_data_task" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyse_data_task.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ycx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ycx.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mailHelper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/util/mailHelper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="untitled2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.untitled2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.analyse_data_task" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ycx" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mailHelper" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.untitled2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mailHelper" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ycx" />
+        <item index="4" class="java.lang.String" itemvalue="Python.analyse_data_task" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="540fe92a-d49f-4108-a7ec-7d1046c12828" name="Default" comment="" />
+      <created>1498821497902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1498821497902</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_Thread1_py - 2017.08.22 at 16h 49m 46s.xml">
+      <configuration name="Unittests in Thread1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Thread2_py - 2017.08.22 at 10h 32m 41s.xml">
+      <configuration name="Unittests in Thread2.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Thread2_py - 2017.08.22 at 10h 33m 04s.xml">
+      <configuration name="Unittests in Thread2.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_Thread_py - 2017.08.21 at 23h 34m 41s.xml">
+      <configuration name="Unittests in test_Thread.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_Thread_py - 2017.08.21 at 23h 35m 17s.xml">
+      <configuration name="Unittests in test_Thread.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.08.22 at 17h 04m 57s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.08.28 at 16h 01m 12s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.08.28 at 16h 02m 35s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.08.28 at 16h 08m 12s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_py - 2017.08.29 at 09h 54m 22s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="34" y="1" width="1932" height="1056" extended-state="1" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20256548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.065205775" sideWeight="0.5659411" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06828852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15476191" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.065205775" sideWeight="0.4340589" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17537747" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46719456" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957596" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26839826" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06828852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17537747" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46719456" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getData/Softbei/analyse_data/common/class_merge_csv.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Softbei/grab_data/sing/test.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Softbei/grab_data/sing/class_damai_sing.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/untitled2.py</url>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Softbei/common/class_database.py</url>
+          <line>934</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Softbei/analyse_data/class_age.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/untitled2.py</url>
+          <line>224</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/untitled2.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/static/js/index_index.js</url>
+          <line>63</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/static/js/time_spilder.js</url>
+          <line>118</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/static/js/now_splider.js</url>
+          <line>278</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/static/js/index_index.js</url>
+          <line>47</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="151" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="workQueue" />
+        <watch expression="b" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Softbei/grab_data/sing/class_idaocao_sing.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/to_csv/class_to_csv.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/class_main_analyse_data.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/grab_data/news/class_xinlang_news.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/analyse_data/class_age.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/analyse_data/class_hot.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/grab_data/sport/class_damai_sport.py" />
+    <entry file="file://$PROJECT_DIR$/config.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/class_main_grab_data.py" />
+    <entry file="file://$PROJECT_DIR$/analyse_data_task.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/common/class_database.py" />
+    <entry file="file://C:/Python27_64/Lib/site-packages/flask/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/test/Test1.py" />
+    <entry file="file://$PROJECT_DIR$/Softbei/test/Test_a.py" />
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/util/dbutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/factory/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ycx.py" />
+    <entry file="file://$PROJECT_DIR$/templates/now_spilder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="48" column="79" lean-forward="false" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/city/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/food/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/hotel/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/scenic/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/util/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/time_spilder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/factory/app_factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/model/Task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/com/model/User.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/util/constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/city/city_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/scenic/scenic_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/hotel/hotel_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="157" column="16" lean-forward="false" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/spider/food/food_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="98" column="23" lean-forward="false" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/util/mailHelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/time_spilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1926">
+          <caret line="133" column="23" lean-forward="true" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#showTask1#0" expanded="false" />
+            <marker date="1509886519103" expanded="true" signature="5117:5142" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="5208:5234" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="5411:5428" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="5694:5706" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="6689:6695" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="6695:6701" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="6702:6708" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="6708:6714" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="8420:8445" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="8511:8537" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="8714:8731" ph="..." />
+            <marker date="1509886519103" expanded="true" signature="9547:9553" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="9553:9559" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="9560:9566" ph=" " />
+            <marker date="1509886519103" expanded="true" signature="9566:9572" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/now_splider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#166#260#0" expanded="false" />
+            <element signature="e#275#601#0" expanded="false" />
+            <element signature="n#!!block;n#show#0" expanded="false" />
+            <element signature="n#!!block;n#hide#0" expanded="false" />
+            <element signature="n#!!block;n#CheckAll#0" expanded="false" />
+            <element signature="n#!!block;n#Choose#0" expanded="false" />
+            <element signature="n#!!block;n#addTask#0" expanded="false" />
+            <element signature="n#!!block;n#showTask#0" expanded="false" />
+            <element signature="n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#stop#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTask#0" expanded="false" />
+            <marker date="1511703333903" expanded="true" signature="4525:4550" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="4616:4642" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="4819:4836" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="5102:5114" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="5339:5349" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="6088:6094" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="6094:6100" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="6101:6107" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="6107:6113" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="7823:7848" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="7914:7940" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="8117:8134" ph="..." />
+            <marker date="1511703333903" expanded="true" signature="8950:8956" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="8956:8962" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="8963:8969" ph=" " />
+            <marker date="1511703333903" expanded="true" signature="8969:8975" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index_index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="23" />
+          <folding>
+            <element signature="e#6319#6422#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTask#0" expanded="false" />
+            <element signature="n#!!block;n#getAnalyseSplider#0" expanded="false" />
+            <element signature="e#11741#11756#0" expanded="false" />
+            <element signature="e#14491#14513#0" expanded="false" />
+            <marker date="1511704094051" expanded="true" signature="688:706" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="1208:1224" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="1823:1840" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="2031:2048" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="3209:3234" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="3292:3318" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="4624:4630" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="4630:4636" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="4637:4643" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="4643:4649" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="5529:5545" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="6652:6677" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="6735:6761" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="6922:6939" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="7635:7641" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="7641:7647" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="7648:7654" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="7654:7660" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="9346:9371" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="9429:9455" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="9616:9633" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="10300:10306" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="10306:10312" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="10313:10319" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="10319:10325" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="11928:11945" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="12139:12156" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="13238:13263" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="13321:13347" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="13814:13820" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="13820:13826" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="13827:13833" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="13833:13839" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="15738:15763" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="15821:15847" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="16008:16025" ph="..." />
+            <marker date="1511704094051" expanded="true" signature="16722:16728" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="16728:16734" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="16735:16741" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="16741:16747" ph=" " />
+            <marker date="1511704094051" expanded="true" signature="17916:17932" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/model/City.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/model/Food.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/model/Hotel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/model/Senic_spot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="441" column="35" lean-forward="true" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+            <element signature="e#373#429#0" expanded="false" />
+            <element signature="e#757#758#0" expanded="false" />
+            <element signature="e#5559#6115#0" expanded="false" />
+            <element signature="e#6896#6952#0" expanded="false" />
+            <element signature="e#7010#7185#0" expanded="false" />
+            <element signature="e#7260#8056#0" expanded="false" />
+            <element signature="e#8727#8919#0" expanded="false" />
+            <element signature="e#9009#9065#0" expanded="false" />
+            <element signature="e#9153#9645#0" expanded="false" />
+            <element signature="e#9739#9962#0" expanded="false" />
+            <element signature="e#10049#10789#0" expanded="false" />
+            <element signature="e#10877#10973#0" expanded="false" />
+            <element signature="e#11000#11212#0" expanded="false" />
+            <element signature="e#11043#11098#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/showdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="66" column="33" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="33" />
+          <folding>
+            <marker date="1511709449105" expanded="true" signature="1391:1409" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/showdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

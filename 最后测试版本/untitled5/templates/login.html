@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>登录</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="../static/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/style-responsive.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+  </head>
+
+  <body>
+
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" action="{{ url_for('to_login') }}"  method="post">
+		        <h2 class="form-login-heading">登录</h2>
+		        <div class="login-wrap">
+		            <input name="username" type="text" class="form-control" placeholder="请输入账号" autofocus>
+		            <br>
+		            <input name="password" type="password" class="form-control" placeholder="请输入密码">
+				</div>
+		            <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+		      </form>	  	
+	  	
+	  	</div>
+	  </div>
+
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="../static/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("../static/img/timg.jpg", {speed: 1000});
+    </script>
+
+
+  </body>
+</html>

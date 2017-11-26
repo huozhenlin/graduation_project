@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block head %}
+<link href="{{ url_for('static',filename='css/index.css') }}" rel="stylesheet" type="text/css">
+<script src="{{ url_for('static',filename='js/index_index.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row" style="text-align: center">
+    <div id="all_spliders" class="col-xs-6 col-md-6" style="background-color: darkgreen">
+        <div class="info-box bg-green">
+            <div class="info-box-content" style="padding-top: 5px">
+                <span class="info-box-icon"><i class="fa fa-bug" style="color: green;font-size: 45px"></i></span>
+                <div id="spliders" class="info-box-content" style="padding-top: 10px">
+
+                </div><!-- /.info-box-content -->
+
+            </div><!-- /.info-box-content -->
+        </div><!-- /.info-box -->
+    </div>
+
+    <div id="queue_spliders" class="col-xs-6 col-md-6" style="background-color: #00c5de">
+        <div class="info-box bg-blue">
+            <div class="info-box-content" style="padding-top: 5px;">
+            <span class="info-box-icon"><i class="fa fa-compass"
+                                           style="color: palegoldenrod;font-size: 45px"></i></span>
+                <div id="splider_num" class="info-box-content" style="padding-top: 10px">
+
+                </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+        </div>
+    </div>
+
+
+    <!--<div id="analyse_data" class="col-xs-4 col-md-4" style="background-color: yellow">-->
+        <!--<div class="info-box bg-green">-->
+            <!--<div class="info-box-content" style="padding-top: 5px;">-->
+                <!--<span class="info-box-icon"><i class="fa fa-database"-->
+                                               <!--style="color: whitesmoke;font-size: 45px"></i></span>-->
+                <!--<div id="analyse_num" class="info-box-content" style="padding-top: 10px">-->
+
+                <!--</div>&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+    <!--</div>-->
+
+</div>
+
+<div id="show">
+
+</div>
+
+{% endblock %}
+
